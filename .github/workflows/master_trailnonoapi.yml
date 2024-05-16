@@ -73,11 +73,3 @@ jobs:
         with:
           node-version: '16.x'
 
-      - name: initialize db
-        env:
-          PGUSER: ${{ secrets.DPGUSER }}
-          PGHOST: ${{ secrets.PGHOST }}
-          PGDATABASE: ${{ secrets.PGDATABASE }}
-        run: |
-          npm run init-db        
-          
